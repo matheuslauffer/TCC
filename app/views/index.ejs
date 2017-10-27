@@ -1,0 +1,39 @@
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <title>Bora Jogar!?</title>
+  </head>
+  <body>
+    <main class="container">
+      <div class="menuLogin">
+        <form action="/inicial" method="post">
+          <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label element">
+            <input class="mdl-textfield__input" type="text" id="login" class="loginField">
+            <label class="mdl-textfield__label" for="login" class="loginLabel" id="labelLogin">Login</label>
+          </div>
+          <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label element">
+            <input class="mdl-textfield__input" type="password" id="senha" class="loginField">
+            <label class="mdl-textfield__label" for="senha" class="loginLabel" id="labelSenha">Senha</label>
+          </div>
+          <div>
+            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" id="btnLogin">
+              Entrar
+            </button>
+          </div>
+          <div>
+            <div class="loginWithFacebook">
+              <img src="images/facebook.png" class="facebookImage"/>
+                <p>Entrar com o Facebook</p>
+            </div>
+          </div>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>

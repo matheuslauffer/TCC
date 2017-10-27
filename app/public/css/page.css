@@ -1,0 +1,6 @@
+.header{
+  background-color: #42CC99;
+}
+.demo-layout-waterfall .mdl-layout__header-row .mdl-navigation__link:last-of-type{
+  padding-right: 0;
+}
