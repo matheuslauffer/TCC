@@ -62,7 +62,7 @@ html, body {
 
 menu {
     position: fixed;
-    top: 0;
+    top: 50px;
     left: 0;
     z-index: 1000;
     width: 220px;
@@ -73,6 +73,18 @@ menu {
     -moz-transform: translateX(-220px);
     -ms-transform: translateX(-220px);
     transform: translateX(-220px);
+    -webkit-transition: all .25s linear;
+    -moz-transition: all .25s linear;
+    -ms-transition: all .25s linear;
+    transition: all .25s linear;
+}
+
+main {
+    padding: 30px;
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
     -webkit-transition: all .25s linear;
     -moz-transition: all .25s linear;
     -ms-transition: all .25s linear;
@@ -100,7 +112,7 @@ menu li a:hover {
     transform: translateX(0);
 }
 
-.menu-active header, main{
+.menu-active main{
     -webkit-transform: translateX(220px);
     -moz-transform: translateX(220px);
     -ms-transform: translateX(220px);
