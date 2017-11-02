@@ -1,5 +1,5 @@
 .header{
-  background-color: #42CC99 !important;
+  background-color: #30CFC0 !important;
   width: 100%;
   height: 50px;
   font-size: 20px;
@@ -39,7 +39,7 @@
     text-indent: -9999px;
     overflow: hidden;
     cursor: pointer;
-    background: #42CC99;
+    background: #30CFC0;
 }
 
 .menu-anchor:before {
@@ -58,7 +58,7 @@ menu {
     z-index: 1000;
     width: 220px;
     height: 100%;
-    background: #42CC99;
+    background: #30CFC0;
     box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 2px 9px 1px rgba(0, 0, 0, 0.12), 0 4px 2px -2px rgba(0, 0, 0, 0.2);
     -webkit-transform: translateX(-220px);
     -moz-transform: translateX(-220px);
@@ -93,7 +93,7 @@ menu li a {
 
 menu li a:hover {
     background: #FFF;
-    color: #42CC99;
+    color: #30CFC0;
 }
 
 .menu-active menu {
