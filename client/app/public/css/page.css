@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+  overflow-x: hidden;
+}
+
+.info{
+  border: solid 1px !important;
+  border-color: #30CFC0 !important;
+  border-radius: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  flex-flow: column;
+  padding: 0;
+  cursor: pointer;
+}
+
+.sectionTitle{
+  font-weight: bold;
+  color: #113d16;
+  padding: 0;
+  flex: initial;
+}

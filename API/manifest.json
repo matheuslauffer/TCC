@@ -1,0 +1,8 @@
+{
+  "name" : "Bora Jogar!?",
+  "short_name" : "Bora Jogar!?",
+  "start_url" : "/app/vews/index.html",
+  "display" : "standalone",
+  "background_color" : "#FFFFFF",
+  "theme-color" : "#3FCB9A",
+}
