@@ -37,3 +37,7 @@ main div{
   background-color: #cecece !important;
   color: #42CC99 !important;
 }
+
+input:focus{
+  border-color: #FFFFFF !important;
+}
