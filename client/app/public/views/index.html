@@ -1,18 +1,26 @@
-<html lang="pt">
+<html lang="pt" ng-app="BoraJogar">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="lib/bootstrap.css">
+    <link rel="stylesheet" href="lib/mdb.css">
     <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="lib/bootstrap.min.css">
-    <link rel="stylesheet" href="lib/mdb.min.css">
+    <link rel="stylesheet" href="css/page.css">
+    <link rel="stylesheet" href="css/menu.css">
     <script src="lib/jquery.min.js"></script>
+    <script src="lib/angular.js"></script>
+    <script src="lib/angular-route.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="config/routeConfig.js"></script>
+    <script src="controllers/login.controller.js"></script>
+    <script src="routes/login.router.js"></script>
     <title>Bora Jogar!?</title>
   </head>
-  <body class="colorBody">
-    <main class="container">
+  <body>
+    <!-- <main class="container">
       <div class="menuLogin">
-        <form action="/inicial" method="post">
+        <form action="/dashboard">
           <div class="md-form">
             <input type="text" id="login" class="form-control">
             <label for="login" class="label">Login</label>
@@ -25,12 +33,14 @@
             <button class="btn btn-default">Login</button>
           </div>
         </form>
-        <!-- <div class="loginWithFacebook">
+        <div class="loginWithFacebook">
           <img src="images/facebook.png" class="facebookImage"/>
           <p>Login com Facebook</p>
-        </div> -->
+        </div>
       </div>
-    </main>
+    </main> -->
+    <div ng-view></div>
+
     <script src="lib/style.js"></script>
     <script src="lib/mdb.js"></script>
     <script src="lib/popper.min.js"></script>

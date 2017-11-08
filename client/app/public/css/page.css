@@ -7,6 +7,16 @@ html, body {
   overflow-x: hidden;
 }
 
+.dashboardContainer{
+  height: 100%;
+  width: 100%;
+  background-color: #FFFFFF !important;
+}
+
+.página{
+  height: 100%;
+  width: 100%;
+}
 .info{
   border: solid 1px !important;
   border-color: #30CFC0 !important;

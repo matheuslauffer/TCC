@@ -1,1 +1,1 @@
-angular.module("boraJogar", ["menu"]);
+angular.module("BoraJogar", ["ngRoute"]);
