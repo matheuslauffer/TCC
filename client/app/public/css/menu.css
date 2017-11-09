@@ -24,6 +24,7 @@
   transition: all .25s linear;
   z-index: 1000;
   overflow: hidden;
+  position: absolute;
 }
 
 .title{
