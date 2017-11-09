@@ -7,10 +7,11 @@ html, body {
   overflow-x: hidden;
 }
 
-.dashboardContainer{
+.pageContainer{
   height: 100%;
   width: 100%;
   background-color: #FFFFFF !important;
+  margin-top: 10px;
 }
 
 .página{
@@ -43,4 +44,43 @@ html, body {
   color: #113d16;
   padding: 0;
   flex: initial;
+}
+
+.createMatchForm{
+  text-align: center;
+  display: flex;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.label{
+  height: 30px;
+  width: 30px;
+}
+
+.label img{
+  height: 100%;
+  width: 100%;
+}
+
+.createMatchForm input{
+  margin-left: 10px;
+}
+
+.createMatchForm input:focus{
+  border-color: #BDBDBD !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.info{
+  width: 100%;
+  border-color: #BDBDBD !important;
+  margin-right: 0;
+  margin-left: 10px;
+  padding: 0;
+}
+
+.iconInfo{
+  margin-top: 10px;
 }

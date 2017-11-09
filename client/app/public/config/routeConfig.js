@@ -8,6 +8,10 @@ angular.module("BoraJogar").config(function($routeProvider){
     }
   });
 
+  $routeProvider.when("/createMatch",{
+    templateUrl : "/views/createMatch.html"
+  })
+
   function redirectLogin($location) {
     $location.path('/login')
   }

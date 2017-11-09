@@ -24,7 +24,7 @@ main div{
   color: #FFFFFF;
 }
 
-.menuLogin div input{
+.menuLogin div .loginForm{
   border-color: #FFFFFF;
 }
 
@@ -40,13 +40,13 @@ main div{
   color: #42CC99 !important;
 }
 
-input:focus{
+.loginForm:focus{
   border-color: #FFFFFF !important;
   outline: none !important;
   box-shadow: none !important;
   color: #FFFFFF !important;
 }
 
-input:focus .label{
+.loginForm:focus .label{
   color: #FFFFFF !important;
 }

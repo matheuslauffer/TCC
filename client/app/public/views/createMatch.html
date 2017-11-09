@@ -1,0 +1,33 @@
+<main class="pageContainer">
+  <form>
+    <div class="createMatchForm">
+      <span class="label"><img src="icons/calendar.png" /></span>
+      <input type="datetime-local" placeholder="Data e Hora"/>
+    </div>
+    <div class="createMatchForm">
+      <span class="label"><img src="icons/location.png" /></span>
+      <input type="text" placeholder="Local"/>
+    </div>
+    <div class="createMatchForm">
+      <span class="label"><img src="icons/player.png" /></span>
+      <input type="number" placeholder="Numero de jogadores"/>
+    </div>
+    <div class="createMatchForm">
+      <span class="label"><img src="icons/sport.png" /></span>
+      <input type="text" placeholder="Modalidade"/>
+    </div>
+    <div class="createMatchForm">
+      <span class="label"><img src="icons/money.png" /></span>
+      <input type="text" placeholder="Valor Total"/>
+    </div>
+    <div class="createMatchForm">
+      <span class="label iconInfo"><img src="icons/information.png" /></span>
+      <textarea class="info" placeholder="Informações"></textarea>
+    </div>
+    <div class="row btnLogin">
+      <div class="col text-center">
+        <button class="btn btn-default" ng-click="ctrl.redirectCreateMatch()">Criar Partida</button>
+      </div>
+    </div>
+  </form>
+</main>
