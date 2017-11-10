@@ -4,7 +4,7 @@
   height: 50px;
   font-size: 20px;
   box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 2px 9px 1px rgba(0, 0, 0, 0.12), 0 4px 2px -2px rgba(0, 0, 0, 0.2) !important;
-  padding: 16px 16px 0 16px;
+  padding: 0px;
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
@@ -29,46 +29,39 @@
 
 .title{
   color: #FFFFFF;
+  line-height: 50px;
+  margin-left: 20px
 }
 
 .menu-anchor {
-    width: 40px;
-    height: 32px;
+    width: 50px;
+    height: 50px;
     display: inline-block;
-    vertical-align: middle;
     position: relative;
-    text-indent: -9999px;
-    overflow: hidden;
-    cursor: pointer;
-    background: #30CFC0;
+    background-color: transparent;
+    border: 0px;
+    color: #FFF;
+    font-size: 30px;
 }
 
-.menu-anchor:before {
-    content: "";
-    display: block;
-    width: 70%;
-    height: 0.25em;
-    background: #FFFFFF;
-    box-shadow: 0 .45em 0 0 #FFFFFF, 0 .9em 0 0 #FFFFFF;
-}
 
 menu {
     position: fixed;
     top: 50px;
-    left: 0;
+    left: -300px;
     z-index: 1000;
     width: 220px;
     height: 100%;
     background: #30CFC0;
     box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 2px 9px 1px rgba(0, 0, 0, 0.12), 0 4px 2px -2px rgba(0, 0, 0, 0.2) !important;
-    -webkit-transform: translateX(-220px);
-    -moz-transform: translateX(-220px);
-    -ms-transform: translateX(-220px);
-    transform: translateX(-220px);
-    -webkit-transition: all .25s linear;
-    -moz-transition: all .25s linear;
-    -ms-transition: all .25s linear;
-    transition: all .25s linear;
+    -webkit-transition: left .25s;
+    -moz-transition: left .25s;
+    -ms-transition: left .25s;
+    transition: .25s left;
+}
+
+menu.active{
+  left: 0px;
 }
 
 main {
@@ -95,20 +88,6 @@ menu li a {
 menu li a:hover {
     background: #FFF;
     color: #30CFC0;
-}
-
-.menu-active menu {
-    -webkit-transform: translateX(0);
-    -moz-transform: translateX(0);
-    -ms-transform: translateX(0);
-    transform: translateX(0);
-}
-
-.menu-active main{
-    -webkit-transform: translateX(220px);
-    -moz-transform: translateX(220px);
-    -ms-transform: translateX(220px);
-    transform: translateX(220px);
 }
 
 .header div p{

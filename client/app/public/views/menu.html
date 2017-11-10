@@ -1,10 +1,12 @@
 <header class="header">
-  <span class="menu-anchor"></span>
+  <button class="menu-anchor" type="button" ng-click="$rootScope.isMenuActive = !$rootScope.isMenuActive">
+    <i class="fa fa-bars"></i>
+  </button>
   <div class="title">
-    <p>Bora Jogar?</p>
+    Bora Jogar?
   </div>
 </header>
-<menu>
+<menu ng-class="{'active': $rootScope.isMenuActive}">
   <ul>
       <li><a href="#">Dashboard</a></li>
       <li><a href="#">Perfil</a></li>

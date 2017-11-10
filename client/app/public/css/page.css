@@ -52,12 +52,13 @@ html, body {
   margin-bottom: 20px;
 }
 
-.label{
+.icon{
   height: 30px;
   width: 30px;
+  font-size: 25px !important;
 }
 
-.label img{
+.icon img{
   height: 100%;
   width: 100%;
 }
@@ -72,9 +73,10 @@ html, body {
   box-shadow: none !important;
 }
 
-.info{
+.infoField{
   width: 100%;
   border-color: #BDBDBD !important;
+  border-radius: 5px;
   margin-right: 0;
   margin-left: 10px;
   padding: 0;
