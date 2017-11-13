@@ -1,4 +1,5 @@
 var express = require('express');
+var consign = require('consign');
 
 var app = express();
 
@@ -10,5 +11,11 @@ app.use(function(req, res, next){
 
 	next();
 });
+
+
+consign().include('app/routes').into(app);
+// app.get('/', function(req, res) {
+//   res.send("Server");
+// });
 
 module.exports = app;

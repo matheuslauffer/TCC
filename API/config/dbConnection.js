@@ -12,5 +12,4 @@ var connMongoDB = function(){
 
 module.exports = function(){
   return connMongoDB;
-  console.log("Servidor de banco de dados rodando");
 }
