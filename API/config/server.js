@@ -13,9 +13,11 @@ app.use(function(req, res, next){
 });
 
 
-consign().include('app/routes').into(app);
-// app.get('/', function(req, res) {
-//   res.send("Server");
-// });
+consign()
+  .include('app/routes')
+    .then('app/controllers')
+    .then('config/dbConnection.js')
+    .then('app/models')
+  .into(app);
 
 module.exports = app;

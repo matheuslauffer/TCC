@@ -1,10 +1,9 @@
-var mongodb = require('mongodb');
-var objectId = require('mongodb').objectId;
+var mongo = require('mongodb');
 
 var connMongoDB = function(){
-  var db = new mongodb.Db(
+  var db = new mongo.Db(
     'bora_jogar',
-    new mongodb.Server('localhost', 27017, {}),
+    new mongo.Server('localhost',27017, {}),
     {}
   );
   return db;
