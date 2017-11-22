@@ -1,3 +1,3 @@
-angular.module("listaTelefonica").value("config", {
-	baseUrl: "http://localhost:8080"
+angular.module("BoraJogar").value("config", {
+	baseUrl: "http://192.168.1.8:8080"
 });

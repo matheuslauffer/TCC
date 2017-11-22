@@ -67,6 +67,22 @@ html, body {
   margin-left: 10px;
 }
 
+.createMatchForm select{
+  margin-left: 10px;
+  border-style: solid;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-color: #BDBDBD !important;
+  width: 100%;
+  background-color: transparent;
+}
+
+.createMatchForm select:focus {
+  border-color: #BDBDBD !important;
+  outline: none;
+}
+
 .createMatchForm input:focus{
   border-color: #BDBDBD !important;
   outline: none !important;

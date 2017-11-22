@@ -2,31 +2,33 @@
   <form>
     <div class="createMatchForm">
       <i class="icon"><img src="icons/calendar.png" /></i>
-      <input type="datetime-local" placeholder="Data e Hora"/>
+      <input type="datetime-local" ng-model="match.diahora" placeholder="Data e Hora"/>
     </div>
     <div class="createMatchForm">
       <i class="icon"><img src="icons/location.png" /></i>
-      <input type="text" placeholder="Local"/>
+      <input type="text" ng-model="match.local" placeholder="Local"/>
     </div>
     <div class="createMatchForm">
       <i class="icon fa fa-futbol-o"></i>
-      <input type="text" placeholder="Modalidade"/>
+      <select class="mdb-select" ng-model="match.esporte" ng-options="sport.nome for sport in sports | orderBy: 'nome'">
+        <option value="">Selecione um esporte</option>
+      </select>
     </div>
     <div class="createMatchForm">
       <i class="icon"><img src="icons/player.png" /></i>
-      <input type="number" placeholder="Numero de jogadores"/>
+      <input type="Number" ng-model="match.numeroJogadores" placeholder="Número de Jogadores"/>
     </div>
     <div class="createMatchForm">
       <i class="icon"><img src="icons/money.png" /></i>
-      <input type="text" placeholder="Valor Total"/>
+      <input type="text" ng-model="match.valorQuadra" placeholder="Valor Total"/>
     </div>
     <div class="createMatchForm">
       <i class="icon iconInfo"><img src="icons/information.png" /></i>
-      <textarea class="infoField" placeholder="Informações"></textarea>
+      <textarea class="infoField" ng-model="match.info" placeholder="Informações"></textarea>
     </div>
     <div class="row btnLogin">
       <div class="col text-center">
-        <button class="btn btn-default">Criar Partida</button>
+        <button class="btn btn-default" ng-click="createMatch(match)">Criar Partida</button>
       </div>
     </div>
   </form>
