@@ -2,11 +2,17 @@ function UserDAO(connection){
   this._connection = connection();
 }
 
-UserDAO.prototype.getUser = function (user) {
+UserDAO.prototype.getUser = function (res, user) {
   this._connection.open(function(err, mongoclient){
-    collection.find(usuario).toArray(function(err, result) {
-      console.log(result);
+    mongoclient.collection("users", function(err, collection){
+      collection.find(user).toArray(function(err, result) {
+        res.send(result);
+      });
+      mongoclient.close();
     });
-    mongoclient.close();
-  })
+  });
 }
+
+module.exports = function() {
+  return UserDAO;
+};
