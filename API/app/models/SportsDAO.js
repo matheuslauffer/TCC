@@ -7,8 +7,9 @@ SportsDAO.prototype.getSports = function (res) {
     mongoclient.collection("esportes", function(err, collection){
       collection.find().toArray(function(err, result){
         res.json(result);
-      })
-    })
+      });
+    });
+    mongoclient.close();
   });
 }
 
