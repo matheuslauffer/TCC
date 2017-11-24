@@ -1,0 +1,29 @@
+<main class="pageContainer">
+  <form>
+    <div class="createMatchForm">
+      <i class="icon"><img src="icons/calendar.png" /></i>
+      <input type="text" ng-model="user.name" placeholder="Nome"/>
+    </div>
+    <div class="createMatchForm">
+      <i class="icon"><img src="icons/calendar.png" /></i>
+      <input type="text" ng-model="user.login" placeholder="login"/>
+    </div>
+    <div class="createMatchForm">
+      <i class="icon"><img src="icons/calendar.png" /></i>
+      <input type="password" ng-model="user.senha" placeholder="senha"/>
+    </div>
+    <div class="createMatchForm">
+      <i class="icon"><img src="icons/location.png" /></i>
+      <input type="text" ng-model="user.email" placeholder="E-mail"/>
+    </div>
+    <div class="createMatchForm">
+      <i class="flaticon-signs"></i>
+      <input type="tel" ng-model="user.tel" placeholder="Telefone"/>
+    </div>
+    <div class="row btnLogin">
+      <div class="col text-center">
+        <button class="btn btn-default" ng-click="createUser(user)">Cadastrar</button>
+      </div>
+    </div>
+  </form>
+</main>

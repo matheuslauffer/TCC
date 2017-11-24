@@ -1,3 +1,10 @@
+module.exports.createUserController = function(application, req, res){
+  var connection = application.config.dbConnection;
+  var UserDAO = new application.app.models.UserDAO(connection);
+  var user = req.body;
+  UserDAO.createUser(res, user);
+}
+
 module.exports.getUserController = function(application, req, res){
   var connection = application.config.dbConnection;
   var UserDAO = new application.app.models.UserDAO(connection);
@@ -5,10 +12,8 @@ module.exports.getUserController = function(application, req, res){
   UserDAO.getUser(res, user);
 }
 
-//criar controller
-module.exports.createUserController = function(application, req, res){
+module.exports.getAllUsersController = function(application, req, res){
   var connection = application.config.dbConnection;
   var UserDAO = new application.app.models.UserDAO(connection);
-
-  UserDAO.createUser(res, user);
+  UserDAO.getAllUsers(res);
 }

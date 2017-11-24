@@ -1,5 +1,5 @@
 angular.module("BoraJogar")
-  .controller("newMatchController", function($scope, matchAPI, sports, $location){
+  .controller("createMatchController", function($scope, matchAPI, sports, $location){
     $scope.sports = sports.data;
     $scope.carregarNumeroDeJogadores = carregarNumeroDeJogadores;
     $scope.match = {};

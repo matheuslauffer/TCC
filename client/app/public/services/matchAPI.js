@@ -5,7 +5,6 @@ angular.module("BoraJogar").factory("matchAPI", function($http, config, $q){
   }
 
   function newMatch(match){
-    console.log(match);
     return $http.post(config.baseUrl + '/create-match', match);
   };
 });

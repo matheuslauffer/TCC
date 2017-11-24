@@ -1,7 +1,7 @@
 angular.module("BoraJogar").config(function($routeProvider){
   $routeProvider.when("/create-match", {
     templateUrl : "/views/createMatch.html",
-    controller: 'newMatchController',
+    controller: 'createMatchController',
     controllerAs: 'ctrl',
     resolve:{
       sports: function(sportsAPI){
