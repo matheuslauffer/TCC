@@ -1,29 +1,29 @@
 <main class="pageContainer">
   <form>
     <div class="createMatchForm">
-      <i class="icon"><img src="icons/calendar.png" /></i>
+      <i class="icon flaticon-calendar"></i>
       <input type="datetime-local" ng-model="match.diahora" placeholder="Data e Hora"/>
     </div>
     <div class="createMatchForm">
-      <i class="icon"><img src="icons/location.png" /></i>
+      <i class="icon flaticon-location"></i>
       <input type="text" ng-model="match.local" placeholder="Local"/>
     </div>
     <div class="createMatchForm">
-      <i class="icon fa fa-futbol-o"></i>
-      <select class="mdb-select" ng-model="match.esporte" ng-options="sport.nome for sport in sports | orderBy: 'nome'">
+      <i class="flaticon-game-2"></i>
+      <select class="mdb-select" ng-model="match.esporte" ng-change="carregarNumeroDeJogadores(match.esporte)" ng-options="sport.nome for sport in sports | orderBy: 'nome'">
         <option value="">Selecione um esporte</option>
       </select>
     </div>
     <div class="createMatchForm">
-      <i class="icon"><img src="icons/player.png" /></i>
-      <input type="Number" ng-model="match.numeroJogadores" placeholder="Número de Jogadores"/>
+      <i class="icon flaticon-player"></i>
+      <input type="Number" ng-model="match.numeroJogadores" placeholder="Número de Jogadores" min="{{minimoDeJogadores}}"/>
     </div>
     <div class="createMatchForm">
-      <i class="icon"><img src="icons/money.png" /></i>
+      <i class="icon flaticon-piggy-bank"></i>
       <input type="text" ng-model="match.valorQuadra" placeholder="Valor Total"/>
     </div>
     <div class="createMatchForm">
-      <i class="icon iconInfo"><img src="icons/information.png" /></i>
+      <i class="iconInfo flaticon-signs"></i>
       <textarea class="infoField" ng-model="match.info" placeholder="Informações"></textarea>
     </div>
     <div class="row btnLogin">

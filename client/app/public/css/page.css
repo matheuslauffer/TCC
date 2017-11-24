@@ -55,21 +55,20 @@ html, body {
   display: flex;
   width: 100%;
   margin-bottom: 20px;
+  margin-left: -20px;
 }
 
 .icon{
-  height: 30px;
-  width: 30px;
-  font-size: 25px !important;
+  margin-top: -5px !important;
+  font-size: 30px !important;
 }
 
-.icon img{
-  height: 100%;
-  width: 100%;
+.iconInfo{
+  font-size: 30px !important;
 }
 
 .createMatchForm input{
-  margin-left: 10px;
+  margin-left: 20px;
 }
 
 .createMatchForm select{
@@ -81,6 +80,7 @@ html, body {
   border-color: #BDBDBD !important;
   width: 100%;
   background-color: transparent;
+  margin-left: 20px;
 }
 
 .createMatchForm select:focus {
@@ -99,12 +99,8 @@ html, body {
   border-color: #BDBDBD !important;
   border-radius: 5px;
   margin-right: 0;
-  margin-left: 10px;
+  margin-left: 17px;
   padding: 0;
-}
-
-.iconInfo{
-  margin-top: 10px;
 }
 
 .fab{
