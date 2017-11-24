@@ -19,6 +19,10 @@
       <input type="Number" ng-model="match.numeroJogadores" placeholder="Número de Jogadores" min="{{minimoDeJogadores}}"/>
     </div>
     <div class="createMatchForm">
+      <i class="icon flaticon-people"></i>
+      <button type="button" class="btnForm" ng-click="convocar()">Convocar Atletas</button>
+    </div>
+    <div class="createMatchForm">
       <i class="icon flaticon-piggy-bank"></i>
       <input type="text" ng-model="match.valorQuadra" placeholder="Valor Total"/>
     </div>

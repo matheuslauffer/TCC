@@ -1,6 +1,6 @@
 	/*
   	Flaticon icon font: Flaticon
-  	Creation date: 24/11/2017 18:27
+  	Creation date: 24/11/2017 22:17
   	*/
 
 @font-face {
@@ -29,31 +29,32 @@ font-style: normal;
 margin-left: 20px;
 }
 
-.flaticon-technology:before { content: "\f100"; }
-.flaticon-internet:before { content: "\f101"; }
-.flaticon-tool:before { content: "\f102"; }
-.flaticon-social:before { content: "\f103"; }
-.flaticon-athletic:before { content: "\f104"; }
-.flaticon-ball-2:before { content: "\f105"; }
-.flaticon-football-1:before { content: "\f106"; }
-.flaticon-player:before { content: "\f107"; }
-.flaticon-game-2:before { content: "\f108"; }
-.flaticon-people-1:before { content: "\f109"; }
-.flaticon-ball-1:before { content: "\f10a"; }
-.flaticon-silhouette:before { content: "\f10b"; }
-.flaticon-football:before { content: "\f10c"; }
-.flaticon-location:before { content: "\f10d"; }
-.flaticon-calendar-1:before { content: "\f10e"; }
-.flaticon-graphic:before { content: "\f10f"; }
-.flaticon-party:before { content: "\f110"; }
-.flaticon-people:before { content: "\f111"; }
-.flaticon-interface:before { content: "\f112"; }
-.flaticon-signs-1:before { content: "\f113"; }
-.flaticon-power:before { content: "\f114"; }
-.flaticon-menu:before { content: "\f115"; }
-.flaticon-signs:before { content: "\f116"; }
-.flaticon-piggy-bank:before { content: "\f117"; }
-.flaticon-calendar:before { content: "\f118"; }
-.flaticon-game-1:before { content: "\f119"; }
-.flaticon-ball:before { content: "\f11a"; }
-.flaticon-game:before { content: "\f11b"; }
+.flaticon-plus-symbol:before { content: "\f100"; }
+.flaticon-technology:before { content: "\f101"; }
+.flaticon-internet:before { content: "\f102"; }
+.flaticon-tool:before { content: "\f103"; }
+.flaticon-social:before { content: "\f104"; }
+.flaticon-athletic:before { content: "\f105"; }
+.flaticon-ball-2:before { content: "\f106"; }
+.flaticon-football-1:before { content: "\f107"; }
+.flaticon-player:before { content: "\f108"; }
+.flaticon-game-2:before { content: "\f109"; }
+.flaticon-people-1:before { content: "\f10a"; }
+.flaticon-ball-1:before { content: "\f10b"; }
+.flaticon-silhouette:before { content: "\f10c"; }
+.flaticon-football:before { content: "\f10d"; }
+.flaticon-location:before { content: "\f10e"; }
+.flaticon-calendar-1:before { content: "\f10f"; }
+.flaticon-graphic:before { content: "\f110"; }
+.flaticon-party:before { content: "\f111"; }
+.flaticon-people:before { content: "\f112"; }
+.flaticon-interface:before { content: "\f113"; }
+.flaticon-signs-1:before { content: "\f114"; }
+.flaticon-power:before { content: "\f115"; }
+.flaticon-menu:before { content: "\f116"; }
+.flaticon-signs:before { content: "\f117"; }
+.flaticon-piggy-bank:before { content: "\f118"; }
+.flaticon-calendar:before { content: "\f119"; }
+.flaticon-game-1:before { content: "\f11a"; }
+.flaticon-ball:before { content: "\f11b"; }
+.flaticon-game:before { content: "\f11c"; }

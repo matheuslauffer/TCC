@@ -132,5 +132,17 @@ html, body {
   color: #FFFFFF;
   align-items: center;
   margin-top: -4px;
+}
 
+.btnForm{
+  width: 100%;
+  text-align: left;
+  background-color: transparent;
+  border: solid 1px;
+  border-color: #BDBDBD;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  cursor: pointer;
+  margin-left: 20px;
 }

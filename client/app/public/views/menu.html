@@ -1,6 +1,6 @@
 <header class="header">
   <button class="menu-anchor" type="button" ng-click="$rootScope.isMenuActive = !$rootScope.isMenuActive">
-    <i class="fa fa-bars"></i>
+    <i class="flaticon-menu"></i>
   </button>
   <div class="title">
     Bora Jogar?
@@ -8,10 +8,10 @@
 </header>
 <menu ng-class="{'active': $rootScope.isMenuActive}">
   <ul>
-      <li><a href="views/dashboard">Dashboard</a></li>
-      <li><a href="#">Criar Partida</a></li>
-      <li><a href="#">Buscar Partidas</a></li>
-      <li><a href="#">Meus Convites</a></li>
-      <li><a href="#">Sair</a></li>
+      <li class="menuOptions"><a href="#"><i class="flaticon-graphic"></i><span>Dashboard</span></a></li>
+      <li class="menuOptions"><a href="#"><i class="flaticon-plus-symbol"></i><span>Criar Partida</span></a></li>
+      <li class="menuOptions"><a href="#"><i class="flaticon-interface"></i><span>Buscar Partidas</span></a></li>
+      <li class="menuOptions"><a href="#"><i class="flaticon-party"></i><span>Meus Convites</span></a></li>
+      <li class="menuOptions"><a href="#"><i class="flaticon-power"></i><span>Sair</span></a></li>
   </ul>
 </menu>

@@ -1,6 +1,6 @@
     /*
     Flaticon icon font: Flaticon
-    Creation date: 24/11/2017 18:27
+    Creation date: 24/11/2017 22:17
     */
 
     @font-face {
@@ -36,60 +36,62 @@
   font-smoothing: antialiased;
     }
 
-    .flaticon-technology:before { content: "\f100"; }
-.flaticon-internet:before { content: "\f101"; }
-.flaticon-tool:before { content: "\f102"; }
-.flaticon-social:before { content: "\f103"; }
-.flaticon-athletic:before { content: "\f104"; }
-.flaticon-ball-2:before { content: "\f105"; }
-.flaticon-football-1:before { content: "\f106"; }
-.flaticon-player:before { content: "\f107"; }
-.flaticon-game-2:before { content: "\f108"; }
-.flaticon-people-1:before { content: "\f109"; }
-.flaticon-ball-1:before { content: "\f10a"; }
-.flaticon-silhouette:before { content: "\f10b"; }
-.flaticon-football:before { content: "\f10c"; }
-.flaticon-location:before { content: "\f10d"; }
-.flaticon-calendar-1:before { content: "\f10e"; }
-.flaticon-graphic:before { content: "\f10f"; }
-.flaticon-party:before { content: "\f110"; }
-.flaticon-people:before { content: "\f111"; }
-.flaticon-interface:before { content: "\f112"; }
-.flaticon-signs-1:before { content: "\f113"; }
-.flaticon-power:before { content: "\f114"; }
-.flaticon-menu:before { content: "\f115"; }
-.flaticon-signs:before { content: "\f116"; }
-.flaticon-piggy-bank:before { content: "\f117"; }
-.flaticon-calendar:before { content: "\f118"; }
-.flaticon-game-1:before { content: "\f119"; }
-.flaticon-ball:before { content: "\f11a"; }
-.flaticon-game:before { content: "\f11b"; }
+    .flaticon-plus-symbol:before { content: "\f100"; }
+.flaticon-technology:before { content: "\f101"; }
+.flaticon-internet:before { content: "\f102"; }
+.flaticon-tool:before { content: "\f103"; }
+.flaticon-social:before { content: "\f104"; }
+.flaticon-athletic:before { content: "\f105"; }
+.flaticon-ball-2:before { content: "\f106"; }
+.flaticon-football-1:before { content: "\f107"; }
+.flaticon-player:before { content: "\f108"; }
+.flaticon-game-2:before { content: "\f109"; }
+.flaticon-people-1:before { content: "\f10a"; }
+.flaticon-ball-1:before { content: "\f10b"; }
+.flaticon-silhouette:before { content: "\f10c"; }
+.flaticon-football:before { content: "\f10d"; }
+.flaticon-location:before { content: "\f10e"; }
+.flaticon-calendar-1:before { content: "\f10f"; }
+.flaticon-graphic:before { content: "\f110"; }
+.flaticon-party:before { content: "\f111"; }
+.flaticon-people:before { content: "\f112"; }
+.flaticon-interface:before { content: "\f113"; }
+.flaticon-signs-1:before { content: "\f114"; }
+.flaticon-power:before { content: "\f115"; }
+.flaticon-menu:before { content: "\f116"; }
+.flaticon-signs:before { content: "\f117"; }
+.flaticon-piggy-bank:before { content: "\f118"; }
+.flaticon-calendar:before { content: "\f119"; }
+.flaticon-game-1:before { content: "\f11a"; }
+.flaticon-ball:before { content: "\f11b"; }
+.flaticon-game:before { content: "\f11c"; }
     
-    $font-Flaticon-technology: "\f100";
-    $font-Flaticon-internet: "\f101";
-    $font-Flaticon-tool: "\f102";
-    $font-Flaticon-social: "\f103";
-    $font-Flaticon-athletic: "\f104";
-    $font-Flaticon-ball-2: "\f105";
-    $font-Flaticon-football-1: "\f106";
-    $font-Flaticon-player: "\f107";
-    $font-Flaticon-game-2: "\f108";
-    $font-Flaticon-people-1: "\f109";
-    $font-Flaticon-ball-1: "\f10a";
-    $font-Flaticon-silhouette: "\f10b";
-    $font-Flaticon-football: "\f10c";
-    $font-Flaticon-location: "\f10d";
-    $font-Flaticon-calendar-1: "\f10e";
-    $font-Flaticon-graphic: "\f10f";
-    $font-Flaticon-party: "\f110";
-    $font-Flaticon-people: "\f111";
-    $font-Flaticon-interface: "\f112";
-    $font-Flaticon-signs-1: "\f113";
-    $font-Flaticon-power: "\f114";
-    $font-Flaticon-menu: "\f115";
-    $font-Flaticon-signs: "\f116";
-    $font-Flaticon-piggy-bank: "\f117";
-    $font-Flaticon-calendar: "\f118";
-    $font-Flaticon-game-1: "\f119";
-    $font-Flaticon-ball: "\f11a";
-    $font-Flaticon-game: "\f11b";
+    $font-Flaticon-plus-symbol: "\f100";
+    $font-Flaticon-technology: "\f101";
+    $font-Flaticon-internet: "\f102";
+    $font-Flaticon-tool: "\f103";
+    $font-Flaticon-social: "\f104";
+    $font-Flaticon-athletic: "\f105";
+    $font-Flaticon-ball-2: "\f106";
+    $font-Flaticon-football-1: "\f107";
+    $font-Flaticon-player: "\f108";
+    $font-Flaticon-game-2: "\f109";
+    $font-Flaticon-people-1: "\f10a";
+    $font-Flaticon-ball-1: "\f10b";
+    $font-Flaticon-silhouette: "\f10c";
+    $font-Flaticon-football: "\f10d";
+    $font-Flaticon-location: "\f10e";
+    $font-Flaticon-calendar-1: "\f10f";
+    $font-Flaticon-graphic: "\f110";
+    $font-Flaticon-party: "\f111";
+    $font-Flaticon-people: "\f112";
+    $font-Flaticon-interface: "\f113";
+    $font-Flaticon-signs-1: "\f114";
+    $font-Flaticon-power: "\f115";
+    $font-Flaticon-menu: "\f116";
+    $font-Flaticon-signs: "\f117";
+    $font-Flaticon-piggy-bank: "\f118";
+    $font-Flaticon-calendar: "\f119";
+    $font-Flaticon-game-1: "\f11a";
+    $font-Flaticon-ball: "\f11b";
+    $font-Flaticon-game: "\f11c";

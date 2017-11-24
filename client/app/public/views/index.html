@@ -46,8 +46,9 @@
   </head>
   <body>
     <ui-menu></ui-menu>
-    <div class="jumbotron" ng-show="loading">
-		  <h5>Carregando, por favor aguarde...</h5>
+    <div class="loading" ng-show="loading">
+      <i class="fa fa-spinner fa-pulse fa-3x fa-fw"></i>
+        <span class="sr-only">Loading...</span>
 	  </div>
     <div ng-hide="loading">
       <div ng-view></div>
