@@ -11,6 +11,14 @@ angular.module("BoraJogar").config(function($routeProvider){
                     console.error(error);
                     return []
                   })
+       },
+       users : function(userAPI){
+         return userAPI
+                   .getAllUsers()
+                   .catch(function (error){
+                     console.log(error);
+                     return [];
+                   })
        }
     }
   })

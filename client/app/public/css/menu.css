@@ -91,6 +91,14 @@ menu li a:hover {
     color: #30CFC0;
 }
 
+menu li a:hover span {
+    color: #30CFC0;
+}
+
+menu li a:hover i {
+    color: #30CFC0;
+}
+
 .header div p{
   display: -webkit-flex;
   display: flex;
@@ -112,8 +120,10 @@ menu li a:hover {
 
 .menuOptions a i{
   margin-left: -30px;
+  color: #FFFFFF;
 }
 
 .menuOptions a span{
   margin-left: 10px;
+  color: #FFFFFF;
 }

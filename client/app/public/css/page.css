@@ -14,7 +14,7 @@ html, body {
 .pageContainer{
   width: 100%;
   background-color: #FFFFFF !important;
-  margin-top: 50px;
+  margin-top: 35px;
   height: 91%;
 }
 
@@ -116,7 +116,7 @@ html, body {
   text-align: center;
   line-height: 70px;
 
-  position: fixed;
+  position: absolute;
   bottom: 20px;
   right: 20px;
 }
@@ -145,4 +145,19 @@ html, body {
   border-right: 0;
   cursor: pointer;
   margin-left: 20px;
+}
+
+.user{
+  margin-left: 10px;
+}
+
+.convocarCheck{
+  margin-top: 5px;
+}
+
+.fixo{
+  position: absolute;
+  bottom: 10px;
+  left: calc(50% - 118px);
+  z-index: 100;
 }

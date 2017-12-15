@@ -1,4 +1,4 @@
-<main class="pageContainer">
+<main class="pageContainer" ng-click="$rootScope.isMenuActive = false">
   <div class="row">
     <div class="col info">
       <p class="sectionTitle">Próxima Partida:</p>
@@ -23,7 +23,7 @@
       <p class="sectionContent">Excelente</p>
     </div>
   </div>
-  <div class="fab">
-    <button class="btnFab" type="button" ng-click="ctrl.redirectCreateMatch()">+</button>
-  </div>
 </main>
+<div class="fab">
+  <button class="btnFab" type="button" ng-click="redirectCreateMatch()">+</button>
+</div>

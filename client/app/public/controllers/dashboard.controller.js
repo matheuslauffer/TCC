@@ -1,11 +1,6 @@
-angular.module("BoraJogar").controller('dashboardController', dashboardController);
+angular.module("BoraJogar").controller('dashboardController', function($scope, $location){
 
-function dashboardController($location){
-  var self = this;
-
-  self.redirectCreateMatch = redirectCreateMatch;
-
-  function redirectCreateMatch() {
+  $scope.redirectCreateMatch = function() {
     $location.path('/create-match');
   }
-}
+});

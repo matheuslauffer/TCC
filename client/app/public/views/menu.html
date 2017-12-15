@@ -6,12 +6,12 @@
     Bora Jogar?
   </div>
 </header>
-<menu ng-class="{'active': $rootScope.isMenuActive}">
-  <ul>
-      <li class="menuOptions"><a href="#"><i class="flaticon-graphic"></i><span>Dashboard</span></a></li>
-      <li class="menuOptions"><a href="#"><i class="flaticon-plus-symbol"></i><span>Criar Partida</span></a></li>
-      <li class="menuOptions"><a href="#"><i class="flaticon-interface"></i><span>Buscar Partidas</span></a></li>
-      <li class="menuOptions"><a href="#"><i class="flaticon-party"></i><span>Meus Convites</span></a></li>
-      <li class="menuOptions"><a href="#"><i class="flaticon-power"></i><span>Sair</span></a></li>
+<menu ng-class="{'active': $rootScope.isMenuActive}" ng-click="$rootScope.isMenuActive = false">
+  <ul ng-controller="menuController">
+      <li class="menuOptions"><a ng-click="redirectDashboard()"><i class="flaticon-graphic"></i><span>Dashboard</span></a></li>
+      <li class="menuOptions"><a ng-click="redirectCreatematch()"><i class="flaticon-plus-symbol"></i><span>Criar Partida</span></a></li>
+      <li class="menuOptions"><a ng-click="redirectDashboard()"><i class="flaticon-interface"></i><span>Buscar Partidas</span></a></li>
+      <li class="menuOptions"><a ng-click="redirectDashboard()"><i class="flaticon-party"></i><span>Meus Convites</span></a></li>
+      <li class="menuOptions"><a ng-click="redirectDashboard()"><i class="flaticon-power"></i><span>Sair</span></a></li>
   </ul>
 </menu>

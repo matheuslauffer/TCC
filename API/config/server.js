@@ -2,11 +2,16 @@ var express = require('express');
 var consign = require('consign');
 
 var bodyParser = require('body-parser');
-
+var expressSession = require('express-session');
 var app = express();
 
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
+app.use(expressSession({
+  secret:"borajogar",
+  resave: false,
+  saveUninitialized: false
+}));
 
 app.use(function(req, res, next){
   res.setHeader("Access-Control-Allow-Origin", "*");

@@ -1,1 +1,1 @@
-angular.module("BoraJogar", ["ngRoute", "ngCookies"]);
+angular.module("BoraJogar", ["ngRoute", "ngCookies", "angularModalService"]);

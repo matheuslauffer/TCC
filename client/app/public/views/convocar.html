@@ -1,0 +1,10 @@
+<main class="pageContainer" ng-click="$rootScope.isMenuActive = false">
+  <div class="createMatchForm" ng-repeat="user in users">
+    <input type="checkbox" class="convocarCheck" ng-model="user.selecionado" ng-click="verificaSelecionado(users)"/><span class="user">{{user.name}}</span>
+  </div>
+  <div class="row btnLogin fixo">
+    <div class="col text-center">
+      <button class="btn btn-default" ng-click="confirmarConvocados()">Convocar atletas ({{numAtletas}})</button>
+    </div>
+  </div>
+</main>

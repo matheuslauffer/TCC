@@ -1,5 +1,5 @@
 module.exports = function(application){
-  application.post('/create-match', function(req, res) {
+  application.post('/createMatch', function(req, res) {
     application.app.controllers.match.newMatchController(application, req, res);
   });
 
