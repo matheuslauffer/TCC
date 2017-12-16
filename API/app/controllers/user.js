@@ -17,3 +17,7 @@ module.exports.getAllUsersController = function(application, req, res){
   var UserDAO = new application.app.models.UserDAO(connection);
   UserDAO.getAllUsers(res);
 }
+
+module.exports.validaUser = function(application, req, res){
+  res.send("entrou");
+}

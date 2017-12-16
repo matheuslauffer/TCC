@@ -3,7 +3,8 @@ angular.module("BoraJogar")
 
     return {
       createUser: createUser,
-      getAllUsers: getAllUsers
+      getAllUsers: getAllUsers,
+      validaUser: validaUser
     }
 
     function createUser(user){
@@ -12,5 +13,9 @@ angular.module("BoraJogar")
 
     function getAllUsers(){
       return $http.get(config.baseUrl + '/get-all-users');
+    };
+
+    function validaUser(user){
+      return $http.get(config.baseUrl + '/validaUser/'+ user);
     }
 });
