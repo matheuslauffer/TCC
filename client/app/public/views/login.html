@@ -1,16 +1,16 @@
 <main class="container">
   <div class="menuLogin">
-    <form>
+    <form name="formLogin">
       <div class="md-form">
-        <input type="text" id="login" class="form-control loginForm" ng-model='user.login'>
+        <input type="text" id="login" class="form-control loginForm" ng-model='user.login' ng-required="true">
         <label for="login" class="label">Login</label>
       </div>
       <div class="md-form">
-        <input type="password" id="senha" class="form-control loginForm" ng-model='user.senha'>
+        <input type="password" id="senha" class="form-control loginForm" ng-model='user.senha' ng-required="true">
         <label for="senha" class="label">Senha</label>
       </div>
       <div class="text-center">
-        <button class="btn btn-login" type="button" ng-click="ctrl.validaUser(user)">Login</button>
+        <button class="btn btn-login" type="button" ng-click="ctrl.validaUser(user)" ng-disabled="formLogin.$invalid">Login</button>
       </div>
     </form>
     <div class="text-center">
