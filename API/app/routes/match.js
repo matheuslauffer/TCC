@@ -10,4 +10,8 @@ module.exports = function(application){
   application.get('/get-match-by-admin', function(req, res){
     application.app.controllers.match.getMatchByAdminController(application, req, res);
   });
+
+  application.get('/getMyMatchs/:admin', function(req, res){
+    application.app.controllers.match.getMyMatchs(application, req, res);
+  });
 }

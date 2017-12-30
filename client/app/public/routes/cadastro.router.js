@@ -3,5 +3,11 @@ angular.module("BoraJogar").config(function($routeProvider){
     templateUrl : "/views/cadastro.html",
     controller: 'cadastroController',
     controllerAs: 'ctrl',
+    resolve:{
+      validarRota: function($rootScope) {
+        $rootScope.$emit("verificar-menu");
+        return
+      }
+    }
   })
 })

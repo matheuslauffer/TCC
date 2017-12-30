@@ -17,3 +17,11 @@ module.exports.getMatchByAdminController = function(application, req, res){
   var admin = req.body;
   MatchDAO.getMatchByAdmin(res, admin);
 }
+
+module.exports.getMyMatchs = function(application, req, res){
+  var connection = application.config.dbConnection;
+  var MatchDAO = new application.app.models.MatchDAO(connection);
+  var admin = req.params.admin;
+  console.log(req.params);
+  // MatchDAO.getMyMatchs(res, admin);
+}

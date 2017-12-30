@@ -1,5 +1,5 @@
 angular.module("BoraJogar")
-  .controller("createMatchController", function($scope, matchAPI, sports, $location, users, mailAPI){
+  .controller("createMatchController", function($scope, matchAPI, sports, $location, users, mailAPI, $localStorage){
     $scope.sports = sports.data;
     $scope.carregarNumeroDeJogadores = carregarNumeroDeJogadores;
     $scope.match = {};
@@ -23,6 +23,9 @@ angular.module("BoraJogar")
       }
     }
 
+    $scope.openMap = function(){
+      $scope.isMapVisible = true;
+    }
 
     $scope.convocar = function(){
       $scope.isModalActive = true;
@@ -31,6 +34,12 @@ angular.module("BoraJogar")
     $scope.confirmarConvocados = function(){
       $scope.isModalActive = false;
       $scope.match.atletasConvocados = $scope.atletasConvocados;
+    }
+
+    $scope.cancelar = function(){
+      $scope.isModalActive = false;
+      $scope.match.atletasConvocados = null;
+      console.log($scope.match.atletasConvocados);
     }
 
     $scope.verificaSelecionado = function (users) {
@@ -43,16 +52,54 @@ angular.module("BoraJogar")
         }
       });
     }
+
     $scope.createMatch = function(match){
+      match.admin = {
+          id: $localStorage.user._id,
+          login: $localStorage.user.login
+      };
+      console.log(match);
       matchAPI.newMatch(match).then(function(partidaInserida){
-        console.log(partidaInserida.data.insertedIds[0]);
-        mailAPI.sendInvite(partidaInserida.data.insertedIds[0]).then(function(){
-            console.log("Entrou");
-          }).catch(function(error){
-            console.error("Entrou no erro 1 " + error);
-          });
+        //enviar os convites
+        $location.path('/minhasPartidas');
       }).catch(function(error){
-        console.error("Entrou no erro 2 " + error);
+        console.error("Entrou no erro " + error);
       });
+    }
+    function geolocate() {
+      if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(function(position) {
+          console.log("Entrou");
+          var geolocation = {
+            lat: position.coords.latitude,
+            lng: position.coords.longitude
+          };
+          var circle = new google.maps.Circle({
+            center: geolocation,
+            radius: position.coords.accuracy
+          });
+          autocomplete.setBounds(circle.getBounds());
+          console.log(geolocation);
+        }, function(error){
+          console.log(error);
+        });
+      }
+    }
+    var defaultBounds = new google.maps.LatLngBounds(
+      new google.maps.LatLng(-33.8902, 151.1759),
+      new google.maps.LatLng(-33.8474, 151.2631));
+    var input = document.getElementById('searchTextField');
+    var options = {
+      types: ['establishment']
+    };
+    autocomplete = new google.maps.places.Autocomplete(input, options);
+    geolocate();
+    autocomplete.addListener('place_changed', definirLocal);
+    function definirLocal(){
+      var place = autocomplete.getPlace();
+      $scope.match.local = {
+        'nome': place.name,
+        'endereco': place.formatted_address
+      };
     }
 });

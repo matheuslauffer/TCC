@@ -16,6 +16,6 @@ angular.module("BoraJogar")
     };
 
     function validaUser(user){
-      return $http.get(config.baseUrl + '/validaUser/'+ user);
+      return $http.post(config.baseUrl + '/validaUser', user);
     }
 });

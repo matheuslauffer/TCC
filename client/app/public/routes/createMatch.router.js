@@ -19,6 +19,13 @@ angular.module("BoraJogar").config(function($routeProvider){
                      console.log(error);
                      return [];
                    })
+       },
+       validarRota: function($rootScope) {
+         $rootScope.$emit("verificar-menu");
+         return
+       },
+       maps: function(){
+
        }
     }
   })

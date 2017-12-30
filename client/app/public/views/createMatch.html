@@ -6,7 +6,9 @@
     </div>
     <div class="createMatchForm">
       <i class="icon flaticon-location"></i>
-      <input type="text" ng-model="match.local" placeholder="Local"/>
+      <input type="text" id="searchTextField" placeholder="Local" />
+      <!-- <button type="button" class="btnForm" ng-click="openMap()">Local</button> -->
+
     </div>
     <div class="createMatchForm">
       <i class="flaticon-game-2"></i>
@@ -43,9 +45,9 @@
       <div class="createMatchForm" ng-repeat="user in users">
         <input type="checkbox" class="convocarCheck" ng-model="user.selecionado" ng-click="verificaSelecionado(users)"/><span class="user">{{user.name}}</span>
       </div>
-      <div class="row btnLogin fixo">
+      <div class="rodape">
         <div class="col text-center">
-          <button class="btn btn-default" ng-click="confirmarConvocados()">Convocar atletas ({{numAtletas}})</button>
+          <button class="btn btn-default btnConfirm" ng-click="confirmarConvocados()">Convocar({{numAtletas}})</button><button class="btn btn-warning" ng-click="cancelar()">Cancelar</button>
         </div>
       </div>
     </div>

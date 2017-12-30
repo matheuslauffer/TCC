@@ -10,7 +10,7 @@ module.exports = function(application){
   application.get('/get-all-users', function(req, res) {
     application.app.controllers.user.getAllUsersController(application, req, res);
   });
-  application.get('/validaUser/:user', function(req, res) {
+  application.post('/validaUser', function(req, res) {
     application.app.controllers.user.validaUser(application, req, res);
   });
 }

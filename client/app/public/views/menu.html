@@ -1,17 +1,19 @@
-<header class="header">
-  <button class="menu-anchor" type="button" ng-click="$rootScope.isMenuActive = !$rootScope.isMenuActive">
-    <i class="flaticon-menu"></i>
-  </button>
-  <div class="title">
-    Bora Jogar?
-  </div>
-</header>
-<menu ng-class="{'active': $rootScope.isMenuActive}" ng-click="$rootScope.isMenuActive = false">
-  <ul ng-controller="menuController">
-      <li class="menuOptions"><a ng-click="redirectDashboard()"><i class="flaticon-graphic"></i><span>Dashboard</span></a></li>
-      <li class="menuOptions"><a ng-click="redirectCreatematch()"><i class="flaticon-plus-symbol"></i><span>Criar Partida</span></a></li>
-      <li class="menuOptions"><a ng-click="redirectDashboard()"><i class="flaticon-interface"></i><span>Buscar Partidas</span></a></li>
-      <li class="menuOptions"><a ng-click="redirectDashboard()"><i class="flaticon-party"></i><span>Meus Convites</span></a></li>
-      <li class="menuOptions"><a ng-click="redirectDashboard()"><i class="flaticon-power"></i><span>Sair</span></a></li>
-  </ul>
-</menu>
+<div ng-if="!esconderMenu">
+  <header class="header">
+    <button class="menu-anchor" type="button" ng-click="$rootScope.isMenuActive = !$rootScope.isMenuActive">
+      <i class="flaticon-menu"></i>
+    </button>
+    <div class="title">
+      Bora Jogar?
+    </div>
+  </header>
+  <menu ng-class="{'active': $rootScope.isMenuActive}" ng-click="$rootScope.isMenuActive = false">
+    <ul ng-controller="menuController">
+        <li class="menuOptions"><a ng-click="redirectDashboard()"><i class="flaticon-graphic"></i><span>Dashboard</span></a></li>
+        <li class="menuOptions"><a ng-click="redirectCreatematch()"><i class="flaticon-plus-symbol"></i><span>Criar Partida</span></a></li>
+        <li class="menuOptions"><a ng-click="redirectDashboard()"><i class="flaticon-interface"></i><span>Buscar Partidas</span></a></li>
+        <li class="menuOptions"><a ng-click="redirectDashboard()"><i class="flaticon-party"></i><span>Meus Convites</span></a></li>
+        <li class="menuOptions"><a ng-click="redirectDashboard()"><i class="flaticon-power"></i><span>Sair</span></a></li>
+    </ul>
+  </menu>
+</div>

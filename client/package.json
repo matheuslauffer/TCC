@@ -13,6 +13,7 @@
     "body-parser": "^1.18.2",
     "consign": "^0.1.6",
     "express": "^4.16.2",
-    "express-static": "^1.2.5"
+    "express-static": "^1.2.5",
+    "ngstorage": "^0.3.11"
   }
 }
