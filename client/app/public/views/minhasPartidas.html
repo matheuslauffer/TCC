@@ -1,13 +1,17 @@
-<main class="pageContainer" ng-click="$rootScope.isMenuActive = false">
+<main class="pageContainer2" ng-click="$rootScope.isMenuActive = false">
   <div class="item-page-card" ng-repeat="match in matchs">
     <div class="row">
-      <span class="item-page-component">{{match.diahora}}</span>
+      <i class="icon flaticon-location"></i>
+      <span class="item-page-component">{{match.local.nome}}</span>
     </div>
     <div class="row linha">
-      <span class="item-page-component">{{match.local.nome}}</span>
+      <i class="icon flaticon-calendar"></i>
+      <span class="item-page-component">{{match.diahora | date:'dd/MM/yyyy HH:mm'}}</span>
+      <i class="flaticon-game-2"></i>
       <span class="item-page-component">{{match.esporte.nome}}</span>
     </div>
     <div class="row">
+      <i class="iconInfo flaticon-signs"></i>
       <span class="item-page-component">{{match.info}}</span>
     </div>
   </div>

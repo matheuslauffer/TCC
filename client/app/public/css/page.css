@@ -17,6 +17,12 @@ html, body {
   margin-top: 35px;
   height: 91%;
 }
+.pageContainer2{
+  width: 100%;
+  background-color: #FFFFFF !important;
+  margin-top: 30px;
+  height: 91%;
+}
 
 .página{
   height: 100%;
@@ -177,11 +183,12 @@ html, body {
   box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 2px 9px 1px rgba(0, 0, 0, 0.12), 0 4px 2px -2px rgba(0, 0, 0, 0.2) !important;
   margin-top: 5px;
   margin-bottom: 5px;
+  width: 118%;
+  margin-left: -26px;
 }
 .item-page-component{
-  margin-left: 20px;
   margin-top: 2px;
-  margin-right: 5px;
+  margin-left: 5px;
 }
 
 .lado{

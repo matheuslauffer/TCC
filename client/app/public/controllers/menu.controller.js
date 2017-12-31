@@ -27,4 +27,7 @@ angular.module("BoraJogar").controller('menuController', function($scope, $locat
   $scope.redirectCreatematch = function(){
     $location.path("/create-match");
   }
+  $scope.redirectMyMatchs = function(){
+    $location.path("/minhasPartidas");
+  }
 });
