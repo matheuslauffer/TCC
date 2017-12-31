@@ -1,0 +1,14 @@
+<main class="pageContainer" ng-click="$rootScope.isMenuActive = false">
+  <div class="item-page-card" ng-repeat="match in matchs">
+    <div class="row">
+      <span class="item-page-component">{{match.diahora}}</span>
+    </div>
+    <div class="row linha">
+      <span class="item-page-component">{{match.local.nome}}</span>
+      <span class="item-page-component">{{match.esporte.nome}}</span>
+    </div>
+    <div class="row">
+      <span class="item-page-component">{{match.info}}</span>
+    </div>
+  </div>
+</main>

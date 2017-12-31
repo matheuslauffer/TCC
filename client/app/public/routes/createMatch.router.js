@@ -23,9 +23,6 @@ angular.module("BoraJogar").config(function($routeProvider){
        validarRota: function($rootScope) {
          $rootScope.$emit("verificar-menu");
          return
-       },
-       maps: function(){
-
        }
     }
   })

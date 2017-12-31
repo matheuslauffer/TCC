@@ -10,6 +10,6 @@ angular.module("BoraJogar").factory("matchAPI", function($http, config, $q){
   };
 
   function getMyMatchs(admin){
-    return $http.post(config.baseUrl + '/getMyMatchs/'+ admin);
+    return $http.post(config.baseUrl + '/getMyMatchs', admin);
   };
 });

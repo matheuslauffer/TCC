@@ -11,7 +11,7 @@ module.exports = function(application){
     application.app.controllers.match.getMatchByAdminController(application, req, res);
   });
 
-  application.get('/getMyMatchs/:admin', function(req, res){
+  application.post('/getMyMatchs', function(req, res){
     application.app.controllers.match.getMyMatchs(application, req, res);
   });
 }

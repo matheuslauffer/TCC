@@ -39,7 +39,6 @@ angular.module("BoraJogar")
     $scope.cancelar = function(){
       $scope.isModalActive = false;
       $scope.match.atletasConvocados = null;
-      console.log($scope.match.atletasConvocados);
     }
 
     $scope.verificaSelecionado = function (users) {
@@ -54,12 +53,9 @@ angular.module("BoraJogar")
     }
 
     $scope.createMatch = function(match){
-      match.admin = {
-          id: $localStorage.user._id,
-          login: $localStorage.user.login
-      };
-      console.log(match);
+      match.admin = $localStorage.user;
       matchAPI.newMatch(match).then(function(partidaInserida){
+
         //enviar os convites
         $location.path('/minhasPartidas');
       }).catch(function(error){
@@ -69,7 +65,6 @@ angular.module("BoraJogar")
     function geolocate() {
       if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(function(position) {
-          console.log("Entrou");
           var geolocation = {
             lat: position.coords.latitude,
             lng: position.coords.longitude
@@ -79,7 +74,6 @@ angular.module("BoraJogar")
             radius: position.coords.accuracy
           });
           autocomplete.setBounds(circle.getBounds());
-          console.log(geolocation);
         }, function(error){
           console.log(error);
         });
@@ -97,6 +91,7 @@ angular.module("BoraJogar")
     autocomplete.addListener('place_changed', definirLocal);
     function definirLocal(){
       var place = autocomplete.getPlace();
+      console.log(place);
       $scope.match.local = {
         'nome': place.name,
         'endereco': place.formatted_address

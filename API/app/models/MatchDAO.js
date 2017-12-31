@@ -37,13 +37,12 @@ MatchDAO.prototype.getMatchByAdmin = function (res, admin) {
 }
 
 MatchDAO.prototype.getMyMatchs = function(res, administrador){
-  console.log(administrador);
   this._connection.open(function(err, mongoclient){
-    mongoclient.collection("partidas", function(err, collection){
-      collection.find(administrador).toArray(function(err, result){
+     mongoclient.collection("partidas", function(err, collection){
+      collection.find({admin:administrador}).toArray(function(err, result){
         res.send(result);
       });
-    });
+     });
     mongoclient.close();
   });
 }
