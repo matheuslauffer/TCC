@@ -194,3 +194,16 @@ html, body {
 .lado{
   display: inline-block;
 }
+.findContent{
+  position: absolute;
+  width: 100%;
+  left: -10px;
+  top: 0;
+}
+.findField{
+  width: 80% !important;
+  margin-left: 2%;
+}
+.contentUsers{
+  margin-top: 60px;
+}

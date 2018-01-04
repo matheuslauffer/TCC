@@ -42,8 +42,13 @@
 <div id="modal" ng-if="isModalActive == true">
   <div class="modal-box">
     <div class="modal-content">
-      <div class="createMatchForm" ng-repeat="user in users">
-        <input type="checkbox" class="convocarCheck" ng-model="user.selecionado" ng-click="verificaSelecionado(users)"/><span class="user">{{user.name}}</span>
+      <div class="findContent">
+        <i class="flaticon-interface"></i><input class="findField" type="text" ng-model="criterioDeBusca" placeholder="Pesquisar atleta"/>
+      </div>
+      <div class="contentUsers">
+        <div class="createMatchForm" ng-repeat="user in users | filter:criterioDeBusca">
+          <input type="checkbox" class="convocarCheck" ng-model="user.selecionado" ng-click="verificaSelecionado(users)"/><span class="user">{{user.name}}</span>
+        </div>
       </div>
       <div class="rodape">
         <div class="col text-center">
