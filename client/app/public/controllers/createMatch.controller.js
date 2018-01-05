@@ -23,10 +23,6 @@ angular.module("BoraJogar")
       }
     }
 
-    $scope.openMap = function(){
-      $scope.isMapVisible = true;
-    }
-
     $scope.convocar = function(){
       $scope.isModalActive = true;
     }
