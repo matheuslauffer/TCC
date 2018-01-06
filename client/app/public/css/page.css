@@ -216,6 +216,7 @@ html, body {
   float: left;
   display: flex;
   text-align: center;
+  justify-content: center;
 }
 .confirmados{
   margin-top: 10px;
@@ -223,4 +224,6 @@ html, body {
   float: right;
   display: flex;
   text-align: center;
+  align-items: center;
+  justify-content: center;
 }
