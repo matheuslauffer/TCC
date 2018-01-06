@@ -10,5 +10,6 @@ angular.module("BoraJogar")
 
     $scope.openInfo = function(match){
       console.log(match);
+      $location.path("/detalhesPartida/" + match);
     }
 });

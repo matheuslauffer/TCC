@@ -1,5 +1,5 @@
 <main class="pageContainer2" ng-click="$rootScope.isMenuActive = false">
-  <div class="item-page-card" ng-repeat="match in matchs" ng-click="openInfo(match)">
+  <div class="item-page-card" ng-repeat="match in matchs" ng-click="openInfo(match._id)">
     <div class="row">
       <i class="icon flaticon-location"></i>
       <span class="item-page-component">{{match.local.nome}}</span>
@@ -9,10 +9,6 @@
       <span class="item-page-component">{{match.diahora | date:'dd/MM/yyyy HH:mm'}}</span>
       <i class="flaticon-game-2"></i>
       <span class="item-page-component">{{match.esporte.nome}}</span>
-    </div>
-    <div class="row">
-      <i class="iconInfo flaticon-signs"></i>
-      <span class="item-page-component">{{match.info}}</span>
     </div>
   </div>
 </main>

@@ -14,4 +14,7 @@ module.exports = function(application){
   application.post('/getMyMatchs', function(req, res){
     application.app.controllers.match.getMyMatchs(application, req, res);
   });
+  application.get('/getDetails/:_id', function(req, res){
+    application.app.controllers.match.getDetails(application, req, res);
+  });
 }

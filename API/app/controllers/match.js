@@ -24,3 +24,10 @@ module.exports.getMyMatchs = function(application, req, res){
   var admin = req.body;
   MatchDAO.getMyMatchs(res, admin);
 }
+
+module.exports.getDetails = function(application, req, res){
+  var connection = application.config.dbConnection;
+  var MatchDAO = new application.app.models.MatchDAO(connection);
+  var idPartida = req.params._id;
+  MatchDAO.getMatchById(res, idPartida);
+}

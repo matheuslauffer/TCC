@@ -187,7 +187,7 @@ html, body {
   margin-left: -26px;
 }
 .item-page-component{
-  margin-top: 2px;
+  margin-top: 5px;
   margin-left: 5px;
 }
 
@@ -206,4 +206,21 @@ html, body {
 }
 .contentUsers{
   margin-top: 60px;
+}
+.endereco{
+  width: 80%;
+}
+.convidados{
+  margin-top: 10px;
+  width: 45%;
+  float: left;
+  display: flex;
+  text-align: center;
+}
+.confirmados{
+  margin-top: 10px;
+  width: 45%;
+  float: right;
+  display: flex;
+  text-align: center;
 }

@@ -1,4 +1,4 @@
-var objectID = require('mongodb').objectID;
+var objectID = require('mongodb').ObjectID;
 
 function MatchDAO(connection) {
   this._connection = connection();
@@ -40,6 +40,17 @@ MatchDAO.prototype.getMyMatchs = function(res, administrador){
   this._connection.open(function(err, mongoclient){
      mongoclient.collection("partidas", function(err, collection){
       collection.find({admin:administrador}).toArray(function(err, result){
+        res.send(result);
+      });
+     });
+    mongoclient.close();
+  });
+}
+
+MatchDAO.prototype.getMatchById = function(res, idPartida){
+  this._connection.open(function(err, mongoclient){
+     mongoclient.collection("partidas", function(err, collection){
+      collection.find({"_id": objectID(idPartida)}).toArray(function(err, result){
         res.send(result);
       });
      });
