@@ -30,4 +30,7 @@ angular.module("BoraJogar").controller('menuController', function($scope, $locat
   $scope.redirectMyMatchs = function(){
     $location.path("/minhasPartidas");
   }
+  $scope.redirectMyInvites = function(){
+    $location.path("/meusConvites");
+  }
 });
