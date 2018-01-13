@@ -17,4 +17,10 @@ module.exports = function(application){
   application.get('/getDetails/:_id', function(req, res){
     application.app.controllers.match.getDetails(application, req, res);
   });
+  application.get('/getMyInvites/:_id', function(req, res){
+    application.app.controllers.match.getMyInvites(application, req, res);
+  });
+  application.post('/confirmInvite', function(req, res){
+    application.app.controllers.match.confirmInvite(application, req, res);
+  })
 }

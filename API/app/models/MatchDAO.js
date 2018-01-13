@@ -58,6 +58,36 @@ MatchDAO.prototype.getMatchById = function(res, idPartida){
   });
 }
 
+MatchDAO.prototype.getMyInvites = function(res, id){
+  this._connection.open(function(err, mongoclient){
+     mongoclient.collection("partidas", function(err, collection){
+      collection.find({"atletasConvocados._id": id}).toArray(function(err, result){
+        res.send(result);
+      });
+     });
+    mongoclient.close();
+  });
+}
+
+MatchDAO.prototype.confirmInvite = function(res, admin, match, confirmacao){
+  this._connection.open(function(err, mongoclient){
+     mongoclient.collection("partidas", function(err, collection){
+      collection.update({$and:[{_id: objectID(match)},{"atletasConvocados._id":  admin}]},
+        {$set:{"atletasConvocados.$.confirmado": confirmacao}},
+        {},
+        function(err, records){
+          if(err){
+						res.json(err);
+					} else {
+						res.json(records);
+					}
+          mongoclient.close();
+        }
+      )
+      });
+     });
+   }
+
 MatchDAO.prototype.sendInvites = function(partida){
   console.log(partida);
 }

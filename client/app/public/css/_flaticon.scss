@@ -1,6 +1,6 @@
     /*
     Flaticon icon font: Flaticon
-    Creation date: 31/12/2017 20:44
+    Creation date: 08/01/2018 01:25
     */
 
     @font-face {
@@ -36,64 +36,68 @@
   font-smoothing: antialiased;
     }
 
-    .flaticon-basketball-player:before { content: "\f100"; }
-.flaticon-plus-symbol:before { content: "\f101"; }
-.flaticon-technology:before { content: "\f102"; }
-.flaticon-internet:before { content: "\f103"; }
-.flaticon-tool:before { content: "\f104"; }
-.flaticon-social:before { content: "\f105"; }
-.flaticon-athletic:before { content: "\f106"; }
-.flaticon-ball-2:before { content: "\f107"; }
-.flaticon-football-1:before { content: "\f108"; }
-.flaticon-player:before { content: "\f109"; }
-.flaticon-game-2:before { content: "\f10a"; }
-.flaticon-people-1:before { content: "\f10b"; }
-.flaticon-ball-1:before { content: "\f10c"; }
-.flaticon-silhouette:before { content: "\f10d"; }
-.flaticon-football:before { content: "\f10e"; }
-.flaticon-location:before { content: "\f10f"; }
-.flaticon-calendar-1:before { content: "\f110"; }
-.flaticon-graphic:before { content: "\f111"; }
-.flaticon-party:before { content: "\f112"; }
-.flaticon-people:before { content: "\f113"; }
-.flaticon-interface:before { content: "\f114"; }
-.flaticon-signs-1:before { content: "\f115"; }
-.flaticon-power:before { content: "\f116"; }
-.flaticon-menu:before { content: "\f117"; }
-.flaticon-signs:before { content: "\f118"; }
-.flaticon-piggy-bank:before { content: "\f119"; }
-.flaticon-calendar:before { content: "\f11a"; }
-.flaticon-game-1:before { content: "\f11b"; }
-.flaticon-ball:before { content: "\f11c"; }
-.flaticon-game:before { content: "\f11d"; }
+    .flaticon-close:before { content: "\f100"; }
+.flaticon-mark:before { content: "\f101"; }
+.flaticon-basketball-player:before { content: "\f102"; }
+.flaticon-plus-symbol:before { content: "\f103"; }
+.flaticon-technology:before { content: "\f104"; }
+.flaticon-internet:before { content: "\f105"; }
+.flaticon-tool:before { content: "\f106"; }
+.flaticon-social:before { content: "\f107"; }
+.flaticon-athletic:before { content: "\f108"; }
+.flaticon-ball-2:before { content: "\f109"; }
+.flaticon-football-1:before { content: "\f10a"; }
+.flaticon-player:before { content: "\f10b"; }
+.flaticon-game-2:before { content: "\f10c"; }
+.flaticon-people-1:before { content: "\f10d"; }
+.flaticon-ball-1:before { content: "\f10e"; }
+.flaticon-silhouette:before { content: "\f10f"; }
+.flaticon-football:before { content: "\f110"; }
+.flaticon-location:before { content: "\f111"; }
+.flaticon-calendar-1:before { content: "\f112"; }
+.flaticon-graphic:before { content: "\f113"; }
+.flaticon-party:before { content: "\f114"; }
+.flaticon-people:before { content: "\f115"; }
+.flaticon-interface:before { content: "\f116"; }
+.flaticon-signs-1:before { content: "\f117"; }
+.flaticon-power:before { content: "\f118"; }
+.flaticon-menu:before { content: "\f119"; }
+.flaticon-signs:before { content: "\f11a"; }
+.flaticon-piggy-bank:before { content: "\f11b"; }
+.flaticon-calendar:before { content: "\f11c"; }
+.flaticon-game-1:before { content: "\f11d"; }
+.flaticon-ball:before { content: "\f11e"; }
+.flaticon-game:before { content: "\f11f"; }
     
-    $font-Flaticon-basketball-player: "\f100";
-    $font-Flaticon-plus-symbol: "\f101";
-    $font-Flaticon-technology: "\f102";
-    $font-Flaticon-internet: "\f103";
-    $font-Flaticon-tool: "\f104";
-    $font-Flaticon-social: "\f105";
-    $font-Flaticon-athletic: "\f106";
-    $font-Flaticon-ball-2: "\f107";
-    $font-Flaticon-football-1: "\f108";
-    $font-Flaticon-player: "\f109";
-    $font-Flaticon-game-2: "\f10a";
-    $font-Flaticon-people-1: "\f10b";
-    $font-Flaticon-ball-1: "\f10c";
-    $font-Flaticon-silhouette: "\f10d";
-    $font-Flaticon-football: "\f10e";
-    $font-Flaticon-location: "\f10f";
-    $font-Flaticon-calendar-1: "\f110";
-    $font-Flaticon-graphic: "\f111";
-    $font-Flaticon-party: "\f112";
-    $font-Flaticon-people: "\f113";
-    $font-Flaticon-interface: "\f114";
-    $font-Flaticon-signs-1: "\f115";
-    $font-Flaticon-power: "\f116";
-    $font-Flaticon-menu: "\f117";
-    $font-Flaticon-signs: "\f118";
-    $font-Flaticon-piggy-bank: "\f119";
-    $font-Flaticon-calendar: "\f11a";
-    $font-Flaticon-game-1: "\f11b";
-    $font-Flaticon-ball: "\f11c";
-    $font-Flaticon-game: "\f11d";
+    $font-Flaticon-close: "\f100";
+    $font-Flaticon-mark: "\f101";
+    $font-Flaticon-basketball-player: "\f102";
+    $font-Flaticon-plus-symbol: "\f103";
+    $font-Flaticon-technology: "\f104";
+    $font-Flaticon-internet: "\f105";
+    $font-Flaticon-tool: "\f106";
+    $font-Flaticon-social: "\f107";
+    $font-Flaticon-athletic: "\f108";
+    $font-Flaticon-ball-2: "\f109";
+    $font-Flaticon-football-1: "\f10a";
+    $font-Flaticon-player: "\f10b";
+    $font-Flaticon-game-2: "\f10c";
+    $font-Flaticon-people-1: "\f10d";
+    $font-Flaticon-ball-1: "\f10e";
+    $font-Flaticon-silhouette: "\f10f";
+    $font-Flaticon-football: "\f110";
+    $font-Flaticon-location: "\f111";
+    $font-Flaticon-calendar-1: "\f112";
+    $font-Flaticon-graphic: "\f113";
+    $font-Flaticon-party: "\f114";
+    $font-Flaticon-people: "\f115";
+    $font-Flaticon-interface: "\f116";
+    $font-Flaticon-signs-1: "\f117";
+    $font-Flaticon-power: "\f118";
+    $font-Flaticon-menu: "\f119";
+    $font-Flaticon-signs: "\f11a";
+    $font-Flaticon-piggy-bank: "\f11b";
+    $font-Flaticon-calendar: "\f11c";
+    $font-Flaticon-game-1: "\f11d";
+    $font-Flaticon-ball: "\f11e";
+    $font-Flaticon-game: "\f11f";

@@ -42,6 +42,7 @@ angular.module("BoraJogar")
       $scope.atletasConvocados = [];
       users.forEach(function(user){
         if(user.selecionado){
+          user.confirmado = false;
           $scope.atletasConvocados.push(user);
           $scope.numAtletas ++;
         }

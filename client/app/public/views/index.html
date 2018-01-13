@@ -11,11 +11,8 @@
     <link rel="stylesheet" href="css/menu.css">
     <link rel="stylesheet" href="css/flaticon.css">
     <link rel="stylesheet" href="css/modal.css">
+    <link rel="stylesheet" href="css/switch.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
-    <link rel="manifest" href="manifest.json">
-
-
 
     <script src="lib/angular.js"></script>
     <script src="lib/angular-route.min.js"></script>
@@ -35,6 +32,8 @@
     <script src="controllers/menu.controller.js"></script>
     <script src="controllers/minhasPartidas.controller.js"></script>
     <script src="controllers/detalhesPartida.controller.js"></script>
+    <script src="controllers/meusConvites.controller.js"></script>
+    <script src="controllers/detalhesConvite.controller.js"></script>
 
     <script src="services/sportsAPI.js"></script>
     <script src="services/matchAPI.js"></script>
@@ -55,6 +54,10 @@
     <script src="routes/cadastro.router.js"></script>
     <script src="routes/minhasPartidas.router.js"></script>
     <script src="routes/detalhesPartida.router.js"></script>
+    <script src="routes/meusConvites.router.js"></script>
+    <script src="routes/detalhesConvite.router.js"></script>
+
+    <link rel="manifest" href="manifest.json">
 
     <title>Bora Jogar!?</title>
 
@@ -71,5 +74,20 @@
     <script src="lib/popper.min.js"></script>
     <script src="lib/bootstrap.js"></script>
     <script src="lib/mdb.js"></script>
+    <script type="text/javascript" src="js/sw.js"></script>
+    <script type="text/javascript">
+      if ('serviceWorker' in navigator && 'PushManager' in window) {
+        console.log('Service Worker and Push is supported');
+        navigator.serviceWorker.register('js/sw.js').then(function(swReg) {
+          console.log('Service Worker is registered', swReg);
+          swRegistration = swReg;
+        }).catch(function(error) {
+          console.error('Service Worker Error', error);
+        });
+      } else {
+        console.warn('Push messaging is not supported');
+        pushButton.textContent = 'Push Not Supported';
+      }
+    </script>
   </body>
 </html>

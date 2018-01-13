@@ -14,9 +14,11 @@
     <span class="item-page-component">{{matchDetails.info}}</span>
   </div>
   <div class="convidados">
-    <span>Convidados</span>
-  </div>
-  <div class="confirmados">
-    <span>Confirmados</span>
+    <div style="width=100%">Convidados</div>
+    <div ng-repeat="convidado in convidados">
+        <div class="row list-invited">
+          <i class="icon {{icone}}" ></i><span class="item-page-list-component">{{convidado.name}}</span>
+        </div>
+    </div>
   </div>
 </main>

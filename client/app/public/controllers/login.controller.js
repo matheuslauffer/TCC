@@ -15,7 +15,6 @@ function loginController($location, $scope, userAPI, $localStorage){
     userAPI.validaUser(user).then(function(res){
       if(res.data.length > 0){
         $localStorage.user = res.data[0];
-        console.log($localStorage.user);
         $location.path('/dashboard');
       }else{
         alert("Revise suas credenciais de login");

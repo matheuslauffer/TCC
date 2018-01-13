@@ -10,10 +10,13 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@angular/platform-server": "^5.2.0",
+    "@angular/service-worker": "^5.2.0",
     "body-parser": "^1.18.2",
     "consign": "^0.1.6",
     "express": "^4.16.2",
     "express-static": "^1.2.5",
+    "ng-pwa-tools": "0.0.15",
     "ngstorage": "^0.3.11"
   }
 }

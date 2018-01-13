@@ -212,18 +212,42 @@ html, body {
 }
 .convidados{
   margin-top: 10px;
-  width: 45%;
+  width: 100%;
+  height: 50%;
   float: left;
-  display: flex;
+  display: inline-block;
   text-align: center;
   justify-content: center;
 }
-.confirmados{
-  margin-top: 10px;
-  width: 45%;
-  float: right;
-  display: flex;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
+
+.list-invited{
+  margin-left: 7%;
+  margin-top: 5px;
+  font-size: 20px;
+}
+
+.flaticon-mark{
+  color: #30CFC0 !important;
+  size: 3em;
+}
+
+.flaticon-close{
+  color: #DD2E44 !important;
+  size: 3em !important;
+}
+
+.item-page-list-component{
+  margin-left: 5px;
+  margin-top: -2px
+}
+
+.confirm{
+  width: 100%;
+  text-align: right;
+}
+
+.labelConfirm{
+  vertical-align: 20px;
+  margin-right: 50px;
+  font-weight: bold;
 }

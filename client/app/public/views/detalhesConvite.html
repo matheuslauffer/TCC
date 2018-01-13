@@ -1,0 +1,31 @@
+<main class="pageContainer" ng-click="$rootScope.isMenuActive = false">
+  <div class="confirm">
+    <span class="labelConfirm">Bora Jogar?</span>
+    <label class="switch" ng-model="confirmado">
+      <input type="checkbox" ng-model="confirmado" value={{confirmado}} ng-click="toggleConfirm()">
+      <span class="slider round"></span>
+    </label>
+  </div>
+  <div class="row linha">
+    <i class="icon flaticon-calendar"></i>
+    <span class="item-page-component">{{matchDetails.diahora | date:'dd/MM/yyyy HH:mm'}}</span>
+    <i class="flaticon-game-2"></i>
+    <span class="item-page-component">{{matchDetails.esporte.nome}}</span>
+  </div>
+  <div class="row">
+    <i class="icon flaticon-location"></i>
+    <span class="item-page-component endereco">{{matchDetails.local.nome}} {{matchDetails.local.endereco}}</span>
+  </div>
+  <div class="row">
+    <i class="iconInfo flaticon-signs"></i>
+    <span class="item-page-component">{{matchDetails.info}}</span>
+  </div>
+  <div class="convidados">
+    <div style="width=100%">Convidados</div>
+    <div ng-repeat="convidado in convidados">
+        <div class="row list-invited">
+          <i class="icon {{convidado.icone}}" ></i><span class="item-page-list-component">{{convidado.name}}</span>
+        </div>
+    </div>
+  </div>
+</main>
