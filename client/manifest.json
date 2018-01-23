@@ -1,8 +1,13 @@
 {
-  "name": "Nora Jogar?",
-  "short_name": "Bora Jogar",
-  "theme_color": "#30CFC0",
-  "background_color": "#30CFC0",
+  "name": "Bora Jogar?",
+  "short_name": "Bora Jogar?",
+  "icons": [{
+    "src": "images/icons-1.jpg",
+      "sizes": "532x534",
+      "type": "image/png"
+    }],
+  "start_url": "/index.html",
   "display": "standalone",
-  "start_url": "/",
+  "background_color": "#3E4EB8",
+  "theme_color": "#2F3BA2"
 }

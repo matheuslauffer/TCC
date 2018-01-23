@@ -39,7 +39,8 @@ MatchDAO.prototype.getMatchByAdmin = function (res, admin) {
 MatchDAO.prototype.getMyMatchs = function(res, administrador){
   this._connection.open(function(err, mongoclient){
      mongoclient.collection("partidas", function(err, collection){
-      collection.find({admin:administrador}).toArray(function(err, result){
+      collection.find({admin:administrador,
+                      "diahora": {$gte: new Date().toJSON()}}).toArray(function(err, result){
         res.send(result);
       });
      });
@@ -59,9 +60,13 @@ MatchDAO.prototype.getMatchById = function(res, idPartida){
 }
 
 MatchDAO.prototype.getMyInvites = function(res, id){
+  console.log(new Date().toJSON());
+  console.log(id);
   this._connection.open(function(err, mongoclient){
      mongoclient.collection("partidas", function(err, collection){
-      collection.find({"atletasConvocados._id": id}).toArray(function(err, result){
+      collection.find({"atletasConvocados._id": id,
+                      "diahora": {$gte: new Date().toJSON()}}
+                    ).toArray(function(err, result){
         res.send(result);
       });
      });
