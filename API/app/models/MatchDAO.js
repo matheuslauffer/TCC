@@ -60,8 +60,6 @@ MatchDAO.prototype.getMatchById = function(res, idPartida){
 }
 
 MatchDAO.prototype.getMyInvites = function(res, id){
-  console.log(new Date().toJSON());
-  console.log(id);
   this._connection.open(function(err, mongoclient){
      mongoclient.collection("partidas", function(err, collection){
       collection.find({"atletasConvocados._id": id,
