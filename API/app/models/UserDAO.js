@@ -6,6 +6,7 @@ UserDAO.prototype.createUser = function (res,user) {
   this._connection.open(function(err, mongoclient){
     mongoclient.collection("users", function(err, collection){
       collection.insert(user);
+      res.send(true);
       mongoclient.close();
     });
   });

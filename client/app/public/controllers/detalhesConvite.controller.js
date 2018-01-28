@@ -13,7 +13,6 @@ angular.module("BoraJogar")
         }else {
           arr.icone = "flaticon-close";
         }
-        console.log(arr.name +" "+arr.confirmado+" "+ $scope.icone);
       })
     });
     $scope.toggleConfirm = function(){
