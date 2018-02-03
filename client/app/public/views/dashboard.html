@@ -2,14 +2,14 @@
   <div class="row">
     <div class="col info">
       <p class="sectionTitle">Próxima Partida:</p>
-      <p class="sectionContent">Dia: 07/02/2018 as 21:00</p>
-      <p class="sectionContent">Local: Clube do Comércio</p>
+      <p class="sectionContent">Quando? {{nextMatch.diahora | date:'dd/MM/yyyy HH:mm'}}</p>
+      <p class="sectionContent">Onde? {{nextMatch.local.nome}}</p>
     </div>
   </div>
   <div class="row">
     <div class="col info">
       <p class="sectionTitle">Seus convites:</p>
-      <p class="sectionContent">Você possui 2 convites para a semana</p>
+      <p class="sectionContent">Você possui {{invites.length}} convites</p>
     </div>
   </div>
 <div class="fab">
