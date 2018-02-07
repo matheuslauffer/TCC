@@ -4,10 +4,13 @@ function MatchDAO(connection) {
   this._connection = connection();
 }
 
-MatchDAO.prototype.newMatch = function (req, res, partida) {
+MatchDAO.prototype.newMatch = function (req, res, partida, application) {
     this._connection.open(function(err, mongoclient){
       mongoclient.collection("partidas", function(err, collection){
-        collection.insert(partida, (erro, partidaInserida) => res.json(partidaInserida));
+        collection.insert(partida, function(erro, partidaInserida){
+            var sendMail = new application.app.models.sendMail(partida);
+            res.json(partidaInserida);
+        })
         mongoclient.close();
       });
     });
